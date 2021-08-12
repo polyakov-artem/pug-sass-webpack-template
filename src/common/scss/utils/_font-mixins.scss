@@ -1,0 +1,26 @@
+@import '~scss/vars';
+@import '~node-modules/sass-rem/rem';
+
+
+@mixin font-face($font-name, $path, $weight: normal, $style: normal, $formats: ('eot', 'ttf', 'woff', 'svg')) {
+
+  @font-face {
+    $src: ();
+    $ieSupport: index($formats, 'eot');
+
+    @if (index($formats, 'otf')) {$src: append($src, url($path + '.otf') format('otf'), $separator: comma);};
+    @if                                        (index($formats, 'ttf')) {$src: append($src, url($path + '.ttf') format('truetype'), $separator: comma);};
+    @if                                        (index($formats, 'woff')) {$src: append($src, url($path + '.woff') format('woff'), $separator: comma);}
+    @if (index($formats, 'woff2')) {$src: append($src, url($path + '.woff2') format('woff2'), $separator: comma);};
+    @if                                        (index($formats, 'svg')) {$src: append($src, url($path + '.svg##{$font-name}') format('svg'), $separator: comma);};
+
+    font-family: quote($font-name);
+    font-style: $style;
+    font-weight: $weight;
+    src: $src;
+    @if ($ieSupport) {
+      src: url($path + '.eot');
+      $src: append($src, url($path + '.eot?#iefix') format('embedded-opentype'));
+    }
+  }
+}

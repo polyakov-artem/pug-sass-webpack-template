@@ -1,0 +1,51 @@
+include blocks
+
+block template
+  doctype html
+  html(lang='en')
+    head
+
+      //- Meta
+      meta(charset='UTF-8')
+      meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+      meta(http-equiv='X-UA-Compatible', content='ie=edge')
+
+      meta(name='msapplication-TileColor', content='#FFFFFF')
+      meta(name='theme-color', content='#FFFFFF')
+      //- SEO
+
+      //- Basic Seo
+      block basicSeo
+        meta(name='description' content='Index page')
+        meta(name='keywords', content='index, page')
+        meta(name='author' content='')
+
+        //- Twitter
+        meta(name='twitter:card', content='summary')
+        meta(name='twitter:site', content='')
+        meta(name='twitter:image', content='')
+        meta(name='twitter:description', content='')
+
+        //- Facebook
+        meta(property='og:url', content='')
+        meta(property='og:title', content='')
+        meta(property='og:description', content='')
+        meta(property='og:image', content='')
+        meta(property='og:type', content='website')
+
+      //- Favicons
+      link(rel='apple-touch-icon' sizes='180x180' href='assets/favicons/apple-touch-icon.png')
+      link(rel='icon' type='image/png' sizes='32x32' href='assets/favicons/favicon-32x32.png')
+      link(rel='icon' type='image/png' sizes='16x16' href='assets/favicons/favicon-16x16.png')
+      link(rel='manifest' href='assets/favicons/site.webmanifest')
+      link(rel='mask-icon' href='assets/favicons/safari-pinned-tab.svg' color='#2b5797')
+      link(rel='shortcut icon' href='assets/favicons/favicon.ico')
+      meta(name='msapplication-TileColor' content='#2b5797')
+      meta(name='msapplication-config' content='assets/favicons/browserconfig.xml')
+      meta(name='theme-color' content='#ffffff')
+
+
+      block title
+        title Your project!
+   
+    block content

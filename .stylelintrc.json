@@ -1,0 +1,8 @@
+{
+  "extends": "stylelint-config-sass-guidelines",
+  "ignoreFiles": ["src/common/scss/utils/*.scss"],
+  "rules": {
+    "block-no-empty": null,
+    "scss/dollar-variable-pattern": null
+  }
+}

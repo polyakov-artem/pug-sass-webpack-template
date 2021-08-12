@@ -1,0 +1,10 @@
+@import '~scss/vars';
+@import '~node-modules/sass-rem/rem';
+
+body {
+  background-color: #fff;
+  color: $dark_opacity_75;
+  font-family: $font-family-montserrat;
+  font-size: rem(14px);
+  line-height: (24/14);
+}

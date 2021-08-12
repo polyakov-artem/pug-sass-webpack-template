@@ -1,0 +1,314 @@
+//  Сделан на основе custom-reset.css | 27.08.2018 | https://yurch-html.github.io/dist/custom-reset.html */
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+@media all and (-ms-high-contrast: none),
+  (-ms-high-contrast: active) {
+  html {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  min-height: 100%;
+  min-width: 320px;
+  overflow-x: hidden;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+  text-decoration-skip: objects;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+}
+
+:focus {
+  outline: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+th {
+  font-weight: inherit;
+}
+
+
+audio,
+video {
+  display: block;
+}
+
+img {
+  border: 0;
+  display: block;
+}
+
+
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: inherit;
+}
+
+a {
+  background-color: transparent;
+  color: inherit;
+  text-decoration: none;
+}
+
+abbr {
+  border: 0;
+  text-decoration: none;
+}
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+i,
+em {
+  font-style: inherit;
+}
+
+dfn {
+  font-style: inherit;
+}
+
+mark {
+  background-color: transparent;
+  color: inherit;
+}
+
+small {
+  font-size: inherit;
+}
+
+sub,
+sup {
+  font-size: inherit;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-align: left;
+  text-transform: none;
+}
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  appearance: none;
+  cursor: pointer;
+}
+
+textarea {
+  overflow-x: hidden;
+  overflow-y: auto;
+  resize: none;
+}
+
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+  outline: none;
+}
+
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type='search'] {
+  outline: none;
+}
+
+[type='search']::-webkit-search-decoration {
+  appearance: none;
+}
+
+::-webkit-file-upload-button {
+  appearance: none;
+  font: inherit;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  display: block;
+  padding: 0;
+  white-space: normal;
+}
+
+select {
+  appearance: none;
+  appearance: none;
+  appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+
+/* stylelint-disable */
+::input-placeholder { /* Chrome/Opera/Safari */
+  color: inherit;
+  opacity: 1;
+  transition: opacity 0.3s;
+
+  &:focus {
+    opacity: 0;
+  }
+}
+/* stylelint-enable */
+
+::placeholder { /* Firefox 19+ */
+  color: inherit;
+  opacity: 1;
+  transition: opacity 0.3s;
+
+  &:focus {
+    opacity: 0;
+  }
+}
+
+
+:input-placeholder { /* IE 10+ */
+  color: inherit;
+  opacity: 1;
+  transition: opacity 0.3s;
+
+  &:focus {
+    opacity: 0;
+  }
+}
+
+:placeholder { /* Firefox 18- */
+  color: inherit;
+  opacity: 1;
+  transition: opacity 0.3s;
+
+  &:focus {
+    opacity: 0;
+  }
+}
+
+svg {
+  display: block;
+  fill: currentColor;
+  height: 100%;
+  width: 100%;
+}
+
+[hidden] {
+  display: none;
+}
+
+:disabled,
+.disabled {
+  cursor: default;
+}
+
+::-ms-clear {
+  display: none;
+}
+
+:-webkit-autofill {
+  box-shadow: 0 0 100px #fff inset;
+  -webkit-text-fill-color: currentColor;
+}
+
+::selection {
+  background-color: #004fe4;
+  color: #fff;
+}
+
+.visually-hidden {
+  border: 0;
+  height: 0;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+  z-index: -1;
+}
+
+.cover-pic,
+.contain-pic {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.cover-pic {
+  object-fit: cover;
+}
+
+.contain-pic {
+  object-fit: contain;
+}

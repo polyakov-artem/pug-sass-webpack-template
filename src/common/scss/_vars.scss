@@ -1,0 +1,44 @@
+@import '~node-modules/sass-rem/rem';
+
+// Fonts
+$font-family-montserrat: 'Montserrat', Helvetica, Arial, sans-serif;
+
+// Colors
+$dark: rgb(31, 32, 65);
+$dark_opacity_75: rgba(31, 32, 65, 0.75);
+$dark_opacity_50: rgba(31, 32, 65, 0.5);
+$dark_opacity_25: rgba(31, 32, 65, 0.25);
+$dark_opacity_10: rgba(31, 32, 65, 0.1);
+$dark_opacity_5: rgba(31, 32, 65, 0.05);
+$purple-1: rgb(188, 156, 255);
+$purple-2: rgb(139, 164, 249);
+$green-1: rgb(111, 207, 151);
+$green-2: rgb(102, 210, 234);
+$white: #fff;
+$gray: #e5e5e5;
+$orange-1: #ffe39c;
+$orange-2: #ffba9c;
+$black-1: #919191;
+$black-2: #3d4975;
+
+
+$gr-purple: linear-gradient(180deg, $purple-1 0%, $purple-2 100%);
+$gr-purple_opacity_25: linear-gradient(180deg, rgba($purple-1, 0.25) 0%, rgba($purple-2, 0.25) 100%);
+$gr-purple_opacity_50: linear-gradient(180deg, rgba($purple-1, 0.5) 0%, rgba($purple-2, 0.5) 100%);
+$gr-purple_darker_5: linear-gradient(180deg, darken($purple-1, 5%) 0%, darken($purple-2, 5%) 100%);
+$gr-green: linear-gradient(180deg, $green-1 0%, $green-2 100%);
+$gr-green_darker_5: linear-gradient(180deg, darken($green-1, 5%) 0%, darken($green-2, 5%) 100%);
+$gr-orange: linear-gradient(180deg, #ffe39c 0%, #ffba9c 100%);
+$gr-black: linear-gradient(180deg, #919191 0%, #3d4975 100%);
+
+
+$gutter-width: 40px;
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+$page-max-width: 1440px;
+$wrap-max-width: 1200px;
+

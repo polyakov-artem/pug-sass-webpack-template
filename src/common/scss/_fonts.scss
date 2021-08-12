@@ -1,0 +1,4 @@
+@import '~scss/utils/font-mixins';
+
+@include font-face('Montserrat', 'assets/fonts/Montserrat/Montserrat-Bold', bold);
+@include font-face('Montserrat', 'assets/fonts/Montserrat/Montserrat-Regular');
